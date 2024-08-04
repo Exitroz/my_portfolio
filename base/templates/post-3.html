@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <div id="page" class="page">
+      <!-- Header -->
+      <header id="site_header" class="header mobile-menu-hide">
+        <div class="header-content clearfix">
+          <div class="my-photo">
+            <img src="{% static 'images/photo.jpg' %}" alt="image">
+          </div>
+
+          <div class="site-title-block">
+            <div class="site-title">Henry Ezeobi</div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="site-nav">
+            <!-- Main menu -->
+            <ul id="nav" class="site-main-menu">
+              <li>
+                <a class="pt-trigger" href="#about-me">About Me</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="#resume">Resume</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="#blog">Blog</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <!-- /Main menu -->
+          </div>
+          <!-- Navigation -->
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <!-- / Social Links -->
+
+          <!-- Copyrights -->
+          <div class="copyrights">© 2020 All rights reserved.</div>
+          <!-- / Copyrights -->
+        </div>
+      </header>
+      <!-- /Header -->
+
+      <!-- Mobile Header -->
+      <div class="mobile-header mobile-visible">
+        <div class="mobile-logo-container">
+          <div class="mobile-header-image">
+            <a href="#">
+                <img src="{% static 'images/photo.jpg' %}" alt="image">
+            </a>
+          </div>
+          <div class="mobile-site-title"><a href="#">Henry Ezeobi</a></div>
+        </div>
+
+        <a class="menu-toggle mobile-visible">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- /Mobile Header -->
+      
+      <!-- Main Content -->
+      
+
+      <div id="main" class="site-main">
+        <div id="main-content" class="single-page-content">
+          <div id="primary" class="content-area">
+            <div id="content" class="page-content site-content" role="main">
+              <article class="post">
+
+                <div class="post-thumbnail">
+                  <img src="{% static 'images/blog/blog_post_5_full.jpg' %}" alt="image">
+                </div>
+
+                <div class="post-content">
+                  <!-- /Entry header -->
+                  <header class="entry-header">
+                    <!-- Entry meta -->
+                    <div class="entry-meta entry-meta-top">
+                      <span><a href="#" rel="category tag">Cybersecurity</a></span>        
+                    </div>
+                    <!-- /Entry meta -->
+
+                    <h2 class="entry-title">AI and Cybersecurity</h2>
+                  </header>
+                  <!-- /Entry header -->
+
+                  <!-- Entry content -->
+                  <div class="entry-content">
+                    <div class="row">
+                      <div class=" col-xs-12 col-sm-12 ">
+                        <div class="col-inner">
+                          <h3>AI in Threat Detection</h3>
+                          <p>AI systems excel at identifying unusual patterns and behaviors in network traffic. By continuously monitoring and analyzing data, AI can detect anomalies that may indicate a potential cyber threat. This proactive approach allows for early detection of malicious activities, such as unusual login attempts or data exfiltration, before they escalate into significant security breaches.</p>
+
+                          <h4>Machine Learning Algorithms</h4>
+                          <p>Machine learning algorithms can be trained to recognize known threats by analyzing historical data. These algorithms can identify new, previously unseen threats by comparing them to known attack patterns. This capability is crucial in combating evolving cyber threats, such as zero-day attacks, which traditional security measures might miss.</p>
+
+                          <h4>Threat Intelligence</h4>
+                          <p>AI can aggregate and analyze vast amounts of threat intelligence data from various sources, including the dark web, social media, and security forums. This information helps organizations stay informed about the latest cyber threats and vulnerabilities. By correlating threat data with an organization’s own security data, AI can provide actionable insights to enhance defenses.</p>
+
+                          <h3>Enhancing Security Protocols</h3>
+                          <p>AI can automate the initial response to security incidents, reducing the time it takes to contain and mitigate threats. Automated response systems can execute predefined actions, such as isolating affected systems, blocking malicious IP addresses, and notifying security teams. This rapid response minimizes the potential damage caused by cyber attacks.</p>
+                          <p>AI can assist in identifying and prioritizing vulnerabilities within an organization's infrastructure. By scanning systems and software for known vulnerabilities and assessing the potential impact of each, AI helps security teams focus their efforts on the most critical issues. This proactive approach reduces the risk of exploitation by cybercriminals.</p>
+                          <p>AI enhances access control mechanisms by analyzing user behavior and adapting security protocols accordingly. For instance, AI can implement multi-factor authentication (MFA) dynamically, requiring additional verification steps for suspicious login attempts. This adaptive approach ensures that only authorized users gain access to sensitive data and systems.</p>
+
+                          <h3>Future of AI in Cybersecurity</h3>
+                          <h4>AI-Driven Security Operations Centers (SOCs):</h4>
+                          <p>The future of cybersecurity will likely see the rise of AI-driven SOCs, where AI systems handle routine monitoring and threat detection tasks. Human analysts will focus on more complex and strategic issues, leveraging AI-generated insights to make informed decisions. This hybrid approach enhances the efficiency and effectiveness of cybersecurity operations.</p>
+
+                          <h4>Predictive Analytics:</h4>
+                          <p>AI will increasingly be used for predictive analytics in cybersecurity. By analyzing historical data and identifying trends, AI can forecast potential security incidents and vulnerabilities. This foresight allows organizations to take preventive measures, such as patching vulnerabilities and strengthening defenses, before attacks occur.</p>
+
+                          <h4>Collaboration and Information Sharing:</h4>
+                          <p>AI can facilitate better collaboration and information sharing among organizations. By anonymizing and sharing threat intelligence data, AI can help create a collective defense against cyber threats. This collaborative approach enables organizations to learn from each other’s experiences and strengthen their overall security posture.</p>
+
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Entry content -->
+    
+                  <div class="entry-meta entry-meta-bottom">
+                    <div class="date-author">
+                      <span class="entry-date">
+                        <a href="#" rel="bookmark">
+                          <i class="far fa-clock"></i> <span class="entry-date"> 23 Apr 2024</span>
+                        </a>
+                      </span>
+                      <span class="author vcard">
+                        <a class="url fn n" href="#" rel="author"> <i class="fas fa-user"></i> Henry</a>
+                      </span>
+                    </div>
+      
+                    <!-- Share Buttons -->
+                    <div class="entry-share btn-group share-buttons">
+                      <a href="#" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" class="btn" target="_blank" title="Share on Facebook">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                      
+                      <a href="#" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" class="btn" target="_blank" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+          
+                      <a href="#" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="btn" title="Share on Google+">
+                        <i class="fab fa-google-plus"></i>
+                      </a>
+
+                      <a href="#" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                    <!-- /Share Buttons -->
+                  </div>
+
+                  <div class="post-tags">
+                    <div class="tags">
+                      <a href="" rel="tag">Cybersecurity</a>
+                      <a href="" rel="tag">AI</a>
+                      <a href="" rel="tag">Machine Learning</a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+            </div><!-- #content -->
+          </div>
+        </div><!-- #primary -->
+      </div><!-- #main-content -->
+      <!-- /Main Content -->
+    </div>
+
+{% endblock content %}
