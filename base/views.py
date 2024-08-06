@@ -27,6 +27,9 @@ def post5(request):
 def post6(request):
     return render(request, 'post-6.html')
 
+def portfolio1(request):
+    return render(request, 'portfolio-1.html')
+
 def blog_detail(request, pk):
     post = get_object_or_404(BlogPost, pk=pk)
     comments = post.comments.filter(approved=True)

@@ -107,8 +107,9 @@
                       <!-- /Text rotation / Subtitle -->
 
                       <h2 class="hp-main-title">Henry Ezeobi</h2>
-                      <p>Hello! I'm a Data Scientist and Software Developer with a love for all things tech. Whether it's crunching numbers or crafting code. With a passion for sharing my vast experience through mentoring and tutoring. </p>
-                      <p>Fun fact! in my school days I vowed never to be a teacher, currently I cannot go a day without teaching and learning. Outside the digital realm, you'll find me exploring new tech, playing chess, or scouting for new adventure series to watch on Netflix. Lol!</p>
+                      <p>Hello! I'm a Data Scientist and Software Developer with a love for all things tech. Whether it's crunching numbers or crafting code. </p>
+                      <p>I believe data tells stories, and I'm here to listen, analyze, uncover hidden insights, and share those tales through innovative software solutions</p>
+                      <p>Fun fact! in my school days I vowed never to be a teacher, currently I cannot go a day without teaching and learning. Outside the digital realm, you'll find me exploring new live hacks, playing chess, or scouting for new adventure series to watch on Netflix. Lol!</p>
                       <div class="hp-buttons">
                         <a href="{% static 'files/my_cv.pdf' %}" download="my_cv.pdf" class="btn btn-primary">Download CV</a>
                       </div>
@@ -619,7 +620,7 @@
                         <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
                       </li>
                       <li>
-                        <a class="filter btn btn-sm btn-link" data-group="category_media">Media</a>
+                        <a class="filter btn btn-sm btn-link" data-group="category_media">Data visualization</a>
                       </li>
                       <li>
                         <a class="filter btn btn-sm btn-link" data-group="category_mockups">Mockups</a>
@@ -638,21 +639,21 @@
                     <!-- Portfolio Grid -->
                     <div class="portfolio-grid three-columns">
                       
-                      <figure class="item lbaudio" data-groups='["category_all", "category_soundcloud"]'>
+                      <figure class="item lbaudio" data-groups='["category_all", "category_media"]'>
                         <div class="portfolio-item-img">
-                          <img src="{% static 'images/portfolio/1.jpg' %}" alt="SoundCloud Audio" title="" />
-                          <a href="#" class="lightbox mfp-iframe" title="SoundCloud Audio"></a>
+                          <img src="{% static 'images/portfolio/7.jpg' %}" alt="SoundCloud Audio" title="" />
+                          <a href="{% url 'portfolio1' %}" class="ajax-page-load"></a>
                         </div>
 
-                        <i class="fa fa-volume-up"></i>
-                        <h4 class="name">SoundCloud Audio</h4>
-                        <span class="category">SoundCloud</span>
+                        {% comment %} <i class="fa fa-volume-up"></i> {% endcomment %}
+                        <h4 class="name">Power BI</h4>
+                        <span class="category">Data Visualization</span>
                       </figure>
 
-                      <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                      <figure class="item standard" data-groups='["category_all", "category_visualization"]'>
                         <div class="portfolio-item-img">
                           <img src="{% static 'images/portfolio/2.jpg' %}" alt="Media Project 2" title="" />
-                          <a href="portfolio-1.html" class="ajax-page-load"></a>
+                          <a href="{% url 'portfolio1' %}" class="ajax-page-load"></a>
                         </div>
 
                         <i class="far fa-file-alt"></i>
