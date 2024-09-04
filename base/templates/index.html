@@ -8,7 +8,7 @@
   <header id="site_header" class="header mobile-menu-hide">
     <div class="header-content clearfix">
       <div class="my-photo">
-        <img src="{% static 'images/photo.jpg' %}" alt="image">
+        <img src="{% static 'images/profile2.jpg' %}" alt="image">
       </div>
 
       <div class="site-title-block">
@@ -59,7 +59,7 @@
     <div class="mobile-logo-container">
       <div class="mobile-header-image">
         <a href="#">
-            <img src="{% static 'images/photo.jpg' %}" alt="image">
+            <img src="{% static 'images/profile2.jpg' %}" alt="image">
         </a>
       </div>
       <div class="mobile-site-title"><a href="#">Henry Ezeobi</a></div>
@@ -89,7 +89,7 @@
               <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <div class="inner-content">
-                      <div class="fill-block"></div>
+                      <div class="fill"></div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
@@ -623,17 +623,17 @@
                         <a class="filter btn btn-sm btn-link" data-group="category_media">Data visualization</a>
                       </li>
                       <li>
-                        <a class="filter btn btn-sm btn-link" data-group="category_mockups">Mockups</a>
+                        <a class="filter btn btn-sm btn-link" data-group="category_AI">AI</a>
                       </li>
                       <li>
-                        <a class="filter btn btn-sm btn-link" data-group="category_soundcloud">SoundCloud</a>
-                      </li>
+                        <a class="filter btn btn-sm btn-link" data-group="category_machine_learning">Machine Learning</a>
+                      </li> 
                       <li>
-                        <a class="filter btn btn-sm btn-link" data-group="category_vimeo-videos">Vimeo Videos</a>
+                        <a class="filter btn btn-sm btn-link" data-group="category_python">Python</a>
                       </li>
-                      <li>
-                        <a class="filter btn btn-sm btn-link" data-group="category_youtube-videos">YouTube Videos</a>
-                      </li>
+                      {% comment %} <li>
+                        <a class="filter btn btn-sm btn-link" data-group="category_django">Django</a>
+                      </li> {% endcomment %}
                     </ul>
 
                     <!-- Portfolio Grid -->
@@ -652,27 +652,27 @@
 
                       <figure class="item standard" data-groups='["category_all", "category_visualization"]'>
                         <div class="portfolio-item-img">
-                          <img src="{% static 'images/portfolio/2.jpg' %}" alt="Media Project 2" title="" />
-                          <a href="{% url 'portfolio1' %}" class="ajax-page-load"></a>
+                          <img src="{% static 'images/portfolio/output.png' %}" alt="Media Project 2" title="" />
+                          <a href="{% url 'portfolio2' %}" class="ajax-page-load"></a>
                         </div>
 
                         <i class="far fa-file-alt"></i>
-                        <h4 class="name">Media Project 2</h4>
-                        <span class="category">Media</span>
+                        <h4 class="name">Financial Robot Advisor</h4>
+                        <span class="category">Python</span>
                       </figure>
 
-                      <figure class="item lbvideo" data-groups='["category_all", "category_vimeo-videos"]'>
+                      <figure class="item lbvideo" data-groups='["category_all", "category_AI"]'>
                         <div class="portfolio-item-img">
-                          <img src="{% static 'images/portfolio/3.jpg' %}" alt="Vimeo Video 1" title="" />
-                          <a href="#" class="lightbox mfp-iframe" title="Vimeo Video 1"></a>
+                          <img src="{% static 'images/portfolio/8.png' %}" alt="" title="" />
+                          <a href="{% url 'portfolio3' %}" class="lightbox mfp-iframe" title=""></a>
                         </div>
 
                         <i class="fas fa-video"></i>
-                        <h4 class="name">Vimeo Video 1</h4>
-                        <span class="category">Vimeo Videos</span>
+                        <h4 class="name">Mental Health in tech</h4>
+                        <span class="category">Machine Learning</span>
                       </figure>
 
-                      <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                      {% comment %} <figure class="item standard" data-groups='["category_all", "category_media"]'>
                         <div class="portfolio-item-img">
                           <img src="{% static 'images/portfolio/4.jpg' %}" alt="Media Project 1" title="" />
                           <a href="portfolio-1.html" class="ajax-page-load"></a>
@@ -681,9 +681,9 @@
                         <i class="far fa-file-alt"></i>
                         <h4 class="name">Media Project 1</h4>
                         <span class="category">Media</span>
-                      </figure>
+                      </figure> {% endcomment %}
 
-                      <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
+                      {% comment %} <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
                         <div class="portfolio-item-img">
                           <img src="{% static 'images/portfolio/5.jpg' %}" alt="Mockup Design 1" title="" />
                           <a class="lightbox" title="Mockup Design 1" href="images/portfolio/5.jpg"></a>
@@ -692,9 +692,9 @@
                         <i class="far fa-image"></i>
                         <h4 class="name">Mockup Design 1</h4>
                         <span class="category">Mockups</span>
-                      </figure>
+                      </figure> {% endcomment %}
 
-                      <figure class="item lbvideo" data-groups='["category_all", "category_youtube-videos"]'>
+                      {% comment %} <figure class="item lbvideo" data-groups='["category_all", "category_youtube-videos"]'>
                         <div class="portfolio-item-img">
                           <img src="{% static 'images/portfolio/6.jpg' %}" alt="YouTube Video 1" title="" />
                           <a href="#" class="lightbox mfp-iframe" title="YouTube Video 1"></a>
@@ -703,7 +703,7 @@
                         <i class="fas fa-video"></i>
                         <h4 class="name">YouTube Video 1</h4>
                         <span class="category">YouTube Videos</span>
-                      </figure>
+                      </figure> {% endcomment %}
                     </div>
                   </div>
                   <!-- /Portfolio Content -->

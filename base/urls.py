@@ -13,4 +13,6 @@ urlpatterns = [
     path('post5/', views.post5, name='post5'),
     path('post6/', views.post6, name='post6'),
     path('portfolio1/', views.portfolio1, name='portfolio1'),
+    path('portfolio2/', views.portfolio2, name='portfolio2'),
+    path('portfolio3/', views.portfolio3, name='portfolio3'),
 ]

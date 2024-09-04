@@ -30,6 +30,12 @@ def post6(request):
 def portfolio1(request):
     return render(request, 'portfolio-1.html')
 
+def portfolio2(request):
+    return render(request, 'portfolio-2.html')
+
+def portfolio3(request):
+    return render(request, 'portfolio-3.html')
+
 def blog_detail(request, pk):
     post = get_object_or_404(BlogPost, pk=pk)
     comments = post.comments.filter(approved=True)
